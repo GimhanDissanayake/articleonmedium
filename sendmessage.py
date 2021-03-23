@@ -4,6 +4,7 @@ from json import dumps
 from httplib2 import Http
 
 def main():
+    """Send message via Hangouts Chat incoming webhook"""
     url = 'https://chat.googleapis.com<................>'
     message = {
         'text' : 'This is a test message from your server'}

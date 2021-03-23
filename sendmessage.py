@@ -5,7 +5,7 @@ from httplib2 import Http
 
 def main():
     url = 'https://chat.googleapis.com<................>'
-    bot_message = {
+    message = {
         'text' : 'This is a test message from your server'}
 
     message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
@@ -16,7 +16,7 @@ def main():
         uri=url,
         method='POST',
         headers=message_headers,
-        body=dumps(bot_message),
+        body=dumps(message),
     )
 
     print(response)
